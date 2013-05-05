@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Әдебиет</string>
+    <string name="app_version">v1.0.0</string>
+    <string name="title_activity">Әдебиет</string>
+    <string name="splash_app_desc">Android кітап оқу құралы</string>
+    <string name="dashboard_open_book">Кітап ашу</string>
+    <string name="dashboard_setting">Баптаулар</string>
+    <string name="dashboard_help">Көмек</string>
+    <string name="dashboard_about">Біз туралы</string>
+    <string name="menu_toc">Мазмұны</string>
+    <string name="menu_dashboard">Бас мәзір</string>
+    <string name="menu_exit">Шығу</string>
+    <string name="html5_video_load">Видео жүктеу</string>
+
+</resources>

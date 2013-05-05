@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayoutTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center|center" >
+
+        <ImageView
+            android:id="@+id/imageSplashTop"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:gravity="top|center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/text_sieben2" >
+        </ImageView>
+    </TableLayout>
+
+    <!-- Include Fragmented dashboard -->
+
+    <include layout="@layout/splash_fragment_layout" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center|center" >
+
+        <TextView
+            android:id="@+id/textViewSplashDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/splash_app_desc"
+            android:textColor="@color/blue"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textViewBottomVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:text="@string/app_version"
+            android:textColor="@color/blue"
+            android:textSize="15dp" >
+        </TextView>
+    </TableLayout>
+
+</LinearLayout>

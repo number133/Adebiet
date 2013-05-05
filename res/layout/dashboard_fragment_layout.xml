@@ -1,0 +1,32 @@
+<app.seamolec.siebenreader.view.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+    
+	<!--  Open Book Button -->
+    <Button
+        android:id="@+id/btn_open_book"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_openbook"
+        android:text="@string/dashboard_open_book">
+    </Button>   
+	
+	<!--  Help Button -->
+    <Button
+        android:id="@+id/btn_help"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_help"
+        android:text="@string/dashboard_help">
+	</Button>
+	
+    <!--  About Button -->
+    <Button
+        android:id="@+id/btn_about"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_about"
+        android:text="@string/dashboard_about">
+    </Button>
+
+</app.seamolec.siebenreader.view.DashboardLayout>
