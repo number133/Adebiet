@@ -1,57 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.seamolec.siebenreader"
     android:versionCode="1"
     android:versionName="@string/app_version" >
 
     <uses-sdk
+        android:maxSdkVersion="16"
         android:minSdkVersion="7"
-        android:targetSdkVersion="10" android:maxSdkVersion="16"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+        android:targetSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:configChanges="orientation"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" 
-        android:configChanges="orientation">
+        android:theme="@style/AppTheme" >
         <activity
-            android:name=".SplashScreenActivity"
-            android:label="@string/title_activity" android:screenOrientation="sensor" android:theme="@style/AppTheme">
+            android:name="app.seamolec.siebenreader.SplashScreenActivity"
+            android:label="@string/title_activity"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.DashboardActivity" android:theme="@style/AppTheme">
+        <activity
+            android:name="app.seamolec.siebenreader.view.DashboardActivity"
+            android:theme="@style/AppTheme" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.BrowseEpubActivity">
+        <activity android:name="app.seamolec.siebenreader.view.BrowseEpubActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.AboutActivity">
+        <activity android:name="app.seamolec.siebenreader.view.AboutActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.EpubViewerActivity">
+        <activity android:name="app.seamolec.siebenreader.view.EpubViewerActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.TOCActivity">
+        <activity android:name="app.seamolec.siebenreader.view.TOCActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="app.seamolec.siebenreader.view.SettingActivity"
+            android:label="@string/title_activity_setting" >
         </activity>
     </application>
 

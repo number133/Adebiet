@@ -12,6 +12,14 @@
         android:drawableTop="@drawable/btn_openbook"
         android:text="@string/dashboard_open_book">
     </Button>   
+    
+    <!--  Setting Button -->
+    <Button
+        android:id="@+id/btn_setting"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_setting"
+        android:text="@string/dashboard_setting">
+    </Button> 
 	
 	<!--  Help Button -->
     <Button

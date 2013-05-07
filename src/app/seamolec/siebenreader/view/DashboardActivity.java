@@ -22,9 +22,12 @@ public class DashboardActivity extends Activity {
 		Button btnOpenBook = (Button) findViewById(R.id.btn_open_book);
 		
 		// dashboard setting button
+		Button btnSetting = (Button) findViewById(R.id.btn_setting);
+				
+		// dashboard help button
 		Button btnHelp = (Button) findViewById(R.id.btn_help);
 				
-		// dashboard setting button
+		// dashboard about button
 		Button btnAbout = (Button) findViewById(R.id.btn_about);
 		
 		// listener when button open book clicked
@@ -36,6 +39,17 @@ public class DashboardActivity extends Activity {
 				startActivity(i);
 				
 			}
+		});
+		
+		// listener when button setting clicked
+		btnSetting.setOnClickListener(new View.OnClickListener() {
+					
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						Intent i = new Intent(getApplicationContext(), SettingActivity.class);
+						startActivity(i);
+						
+					}
 		});
 		
 		// listener when button help clicked

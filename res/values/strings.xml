@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Әдебиет</string>
@@ -12,5 +13,8 @@
     <string name="menu_dashboard">Бас мәзір</string>
     <string name="menu_exit">Шығу</string>
     <string name="html5_video_load">Видео жүктеу</string>
+    <string name="title_activity_setting">Қосымша баптаулары</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
